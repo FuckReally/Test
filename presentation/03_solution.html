@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>产品方案</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    color:#033E8C;
+    background:linear-gradient(135deg,#E8F2FF 0%,#FFFFFF 100%);
+    display:flex;justify-content:center;align-items:center;height:100vh;padding:60px}
+  h1{font-size:48px;color:#007BFF;margin-bottom:32px}
+  ol{max-width:900px;font-size:22px;line-height:1.6;counter-reset:item}
+  li{counter-increment:item;margin:0 0 24px 0;padding-left:52px;position:relative}
+  li::before{
+    content:counter(item);
+    position:absolute;left:0;top:0;
+    width:36px;height:36px;
+    background:#007BFF;color:#fff;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-weight:600}
+</style>
+</head>
+<body>
+  <section>
+    <h1>产品方案</h1>
+    <ol>
+      <li><strong>意图树：</strong>任意节点入口，一站式闭环操作</li>
+      <li><strong>Agent 工作流：</strong>MCP 原子能力 + A2A 编排多 Agent 协同</li>
+      <li><strong>CUI × GUI 融合：</strong>AI Coding 实时渲染组件，「对话即开发」</li>
+      <li><strong>自学习知识图谱：</strong>GeaBase + TBase，支撑个性化与可解释性</li>
+      <li><strong>GraphRAG 文档中心：</strong>异构知识统一召回，快速问答</li>
+    </ol>
+  </section>
+</body>
+</html>
